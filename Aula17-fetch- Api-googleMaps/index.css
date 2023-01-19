@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    background-color:rgb(233, 187, 138); ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#aligning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectForm{
+    background-color: rgb(239, 228, 215);
+    height: 500px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px 10px
+    #4D1919;
+    border-radius: 40px;
+    
+}
+
+#sectionAll{
+    width: 380px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label{
+    background-color: rgb(189, 72, 72);
+    width: 100%;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
+    padding: 2%;
+    text-align: center;
+
+    border-radius: 5%;
+}
+
+#consultCep{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#consultCep h1{
+    font-size: 1.7rem;
+    color:rgb(148, 48, 48);
+    text-align: center;
+}
+
+.inputs, #select{
+    border: 2px solid rgb(210, 126, 102);
+    width: 40%;
+    font-size: 1.1rem;
+    color: rgb(12, 10, 7);
+    font-family: "Roboto" , sans-serif;
+    padding: 2%;
+    background-color: rgb(255, 232, 208);
+    border-radius: 20px;
+}
+#btns{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    width: 80%;
+}
+#consultBtn, #showMapBtn{
+    width: 110px;
+    height: 60px;
+    background-color:rgb(207, 136, 73); 
+    color: rgb(0, 0, 0);
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-style: none;
+    border-radius: 25px;
+    transition: all 500ms linear;
+}
+
+#consultBtn:hover, #showMapBtn:hover{
+    cursor: pointer;
+    background-color: rgb(182, 98, 14);
+}
+
+#showMapBtn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    width: 80px;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color:rgb(83, 28, 28);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+span{
+    width: 240px;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color:rgb(83, 28, 28);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6rem;
+    background-color: rgb(207, 207, 207);
+    border-radius: 20px;
+}
+
+
+#iframe{
+    background-color: rgb(239, 228, 215);
+    height: 400px; 
+    max-height: 400px;
+    min-width: 600px;
+    max-width: 600px;
+    box-shadow: 0px 0px 30px 10px
+    #4D1919;
+    border-radius: 20px;
+    overflow: auto;
+    display: none;   
+}
+
+.fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#addresses{
+    border: 2px solid rgb(148, 48, 48);;
+    border-radius: 20px;
+    padding: 10px 5px;
+    width: 95%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+

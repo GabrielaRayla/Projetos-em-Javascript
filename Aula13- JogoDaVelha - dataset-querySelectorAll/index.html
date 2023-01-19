@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula 13-Jogo da Velha</title>
+</head>
+<body>
+    <main>
+        <section id="sectForm">
+            <header>
+                <h1>Poker</h1>
+            </header>   
+            <section id="velha">
+                <div id="firstLine">
+                    <button class="elemento" data-row="0" data-column = "0"></button>
+                    <button class="elemento" data-row="0" data-column = "1"></button>
+                    <button class="elemento" data-row="0" data-column = "2"></button>
+                </div>
+                <div id="secondLine">
+                    <button class="elemento" data-row="1" data-column = "0"></button>
+                    <button class="elemento" data-row="1" data-column = "1"></button>
+                    <button class="elemento" data-row="1" data-column = "2"></button>
+                </div>
+                <div id="thirdLine">
+                    <button class="elemento" data-row="2" data-column = "0"></button>
+                    <button class="elemento" data-row="2" data-column = "1"></button>
+                    <button class="elemento" data-row="2" data-column = "2"></button>
+                </div>                
+            </section>
+            <div id="divBtn">
+                <button type="button" id="btn">Reset</button>
+            </div>
+            <p id="msg"></p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

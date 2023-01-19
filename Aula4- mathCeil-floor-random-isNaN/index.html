@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula4-JS</title>
+</head>
+<body>
+    <main>
+        <!-- calculator section -->
+        <section class="sectForm" class="aligning">
+            
+            <header>
+                <h1>Calcular IMC</h1>
+            </header>
+
+            <form class="form" action="" class="aligning">
+
+                <input type="text" class="inputs" id="weight" placeholder="Digite o seu peso: ">
+
+                <input type="text" class="inputs" id="height" placeholder="Digite a sua altura: ">
+
+                <button type="button" id="button1" class="button" onclick="showResultImc()">Calcular</button>
+            </form>
+            <p id="imc"></p>
+        </section>
+        <!-- This section choose a Number between min and max  -->
+        <section class="sectForm" class="aligning">
+            
+            <header>
+                <h1>Mínimo e Máximo</h1>
+            </header>
+
+            <form class="form" action="" class="aligning">
+
+                <input type="text" class="inputs" id="min" placeholder="Insira um número mínimo: ">
+
+                <input type="text" class="inputs" id="max" placeholder="Insira um  número máximo: ">
+
+                <button type="button" id= "button2" class="button" onclick="showResultMinMax()">Calcular</button>
+            </form>
+            <p id="resultMinMax"></p>
+        </section>
+        <!--  This section shows the biggest and the smallest integer-->
+        <section class="sectForm" class="aligning">
+            <header>
+                <h1>Maior e Menor inteiros </h1>
+            </header>
+
+            <form class="form" action="" class="aligning">
+
+                <input type="text" class="inputs" id="decimalNumber" placeholder="Insira um número decimal: ">
+
+                <button type="button" id= "button3" class="button" onclick="showResultInt()">Calcular</button>
+            </form>
+            <p id="resultInt"></p>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

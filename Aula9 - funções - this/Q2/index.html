@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula9-Functions-JS</title>
+</head>
+<body>
+    <main>
+        <section class="sectForm" class="aligning">
+            <header>
+                <h1>Digite a sua data de nascimento e selecione seu gênero: </h1>
+            </header>
+            <form class="form" action="" class="aligning">
+                <div id="inputs">
+                    <input type="text" class="inputs" id="day" placeholder="Dia:">
+                    <input type="text" class="inputs" id="month" placeholder="Mês:">
+                    <input type="text" class="inputs" id="year" placeholder="Ano:">
+                </div>
+                <select name="gender" id="gender">
+                    <option value="" selected disabled id="genderGray"> Gênero </option>
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                </select>
+                <button id="btn" type="button" >Verificar: </button>
+            </form>
+            <div id="results">
+                <span id="result"></span>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

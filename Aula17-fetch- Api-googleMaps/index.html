@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula17-Fetch-googleMaps</title>
+</head>
+<body>
+    <main>
+        <section class="sectForm" id="aligning">
+            <section id="sectionAll">
+                <div id="consultCep">
+                    <h1>Consultar CEP</h1>
+                    <input type="text" class="inputs" id="inputCep" placeholder="00000-000">
+                </div>                   
+                <div id="btns">
+                    <button type="button" id="consultBtn" >Consultar</button>
+                    <button type="button" id="showMapBtn" >Exibir mapa</button>
+                </div>
+                <p id="msg"></p>
+                <div id="addresses">
+                    <div class="fields">
+                        <p>Endereço</p>
+                        <span class="adressDetails" id="address"></span>
+                    </div>
+                    <div class="fields">
+                        <p>Bairro</p>
+                        <span class="adressDetails" id="district"></span>
+                    </div>
+                    <div class="fields">
+                        <p>Cidade</p>
+                        <span class="adressDetails" id="city"></span>
+                    </div>
+                    <div class="fields">
+                        <p>Estado</p>
+                        <span class="adressDetails" id="state"></span>
+                    </div>
+                    <div class="fields">
+                        <p>Latitude</p>
+                        <span class="adressDetails" id="lat"></span>
+                    </div>
+                    <div class="fields">
+                        <p>Longitude</p>
+                        <span class="adressDetails" id="lng"></span>
+                    </div>   
+                </div>
+                
+            </section>
+        </section>
+        <iframe id= "iframe" src= "">
+
+        </iframe>  
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

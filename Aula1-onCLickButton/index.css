@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#home{
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2rem;
+    color:rgb(148, 48, 48);
+}
+
+div{
+   padding-top: 10%;
+   animation: button 1s linear infinite;
+}
+
+#button{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(148, 48, 48);
+    color: antiquewhite;
+    font-size: 1.3rem;
+    font-family: "Roboto" , sans-serif;
+    border-style: none;
+    transition: all 500ms linear;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: rgb(52, 15, 13);
+}
+
+@keyframes button {
+    0%{
+        padding-top: 10%;
+    }
+    100%{
+        padding-top: 9%;
+    }
+}

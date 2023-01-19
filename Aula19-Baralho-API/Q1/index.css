@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(233, 187, 138); ;
+}
+
+#sectForm{
+    background-color: rgb(239, 228, 215);
+    height: 650px;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1{
+    font-size: 3rem;
+    width: 100%;
+    color:rgb(148, 48, 48);
+    text-align: center;
+}
+
+#cards{
+    /* background-color: rgb(200, 107, 0); */
+    height: 300px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cards img{
+    height: 200px;
+    min-width: 150px;
+}
+
+#divBtn{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#shuffleBtn, #drawBtn{
+    width: 130px;
+    height: 80px;
+    background-color: rgb(148, 48, 48);
+    color: antiquewhite;
+    font-size: 1.3rem;
+    font-family: "Roboto" , sans-serif;
+    border-style: none;
+    border-radius: 20px;
+    transition: all 500ms linear;
+}
+
+#shuffleBtn:hover, #drawBtn:hover{
+    cursor: pointer;
+    background-color: rgb(52, 15, 13);
+}
+
+p{
+    font-size: 1.5rem;
+    color: rgb(15, 8, 8);
+    font-weight: 600;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula10-Arrays-While-JS</title>
+</head>
+<body>
+    <main id="main">
+        <section class="sectForm" class="aligning">
+            <header>
+                <h1>Cadastre seu produto: </h1>
+            </header>
+            <form class="form" action="" class="aligning">
+                <div id="inputs">
+                    <div id="divName">
+                        <label for="name">Nome do produto: </label>
+                        <input type="text" class="inputs" id="name" >
+                    </div>
+                    <div id="divDesc">
+                        <label for="desc">Descrição do produto: </label>
+                        <textarea id="desc" rows="3" cols="50"></textarea>
+                    </div>
+                    <div id="divVal">
+                        <label for="val">Valor do produto: </label>
+                        <input type="text" class="inputs" id="val">
+                    </div>
+                    
+                </div>
+                <div id= "btns">
+                    <button id="btnAddProd" type="button" >Adicionar Produto </button>
+                    <button id="btnListProd" type="button" >Listar Produto </button>
+                </div>                
+            </form>
+            <div id="results">
+                <span id="result"></span>
+            </div>
+        </section>
+        
+        <div id="tableResult">
+           
+            <div id="tableTest" >       
+               
+            </div>
+            <section id="divSearch">
+                <div>
+                    <input id= "inputSearch" type="text" placeholder="Pesquise o produto">
+                    <button id="searchBtn" > 
+                        <img src="search.png" alt="">
+                    </button>
+                </div>
+                <p id="searchMsg"></p>
+                
+            </section>
+            <section id="prodDetails">
+                <p id="detailsHeader">Detalhes do produto: </p>
+                <p id="showDetails"></p>
+            </section>
+            
+        </div>
+        
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

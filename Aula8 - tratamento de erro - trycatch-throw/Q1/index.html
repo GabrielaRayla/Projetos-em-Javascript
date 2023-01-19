@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula7-Objects-JS</title>
+</head>
+<body>
+    <main>
+        <section class="sectForm" class="aligning">
+            <header>
+                <h1>Preencha o formulário abaixo: </h1>
+            </header>
+            <form class="form" action="" class="aligning">
+                <input type="text" class="inputs" id="name" placeholder="Nome:">
+                <div id="birthDate">
+                    <input type="number" class="inputs" id="day" placeholder="Dia:">
+                    <input type="number" class="inputs" id="month" placeholder="Mês:">
+                    <input type="number" class="inputs" id="year" placeholder="Ano:">
+                </div>
+                <input type="number" class="inputs" id="weight" placeholder="Peso (Ex: 58.7):">
+                <input type="number" class="inputs" id="height" placeholder="Altura em cm, sem pontos (Ex: 158):">
+                <select name="gender" id="gender">
+                    <option value="" selected disabled id="genderGray"> Gênero </option>
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                </select>
+                <button id="btn" type="button" >Confira: </button>
+            </form>
+            <div id="results">
+                <span id="resultUser"></span>
+                <span id="resultObj"></span>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

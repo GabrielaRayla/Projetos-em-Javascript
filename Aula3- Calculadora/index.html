@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula3-calc</title>
+</head>
+<body>
+    <main class="aligning">
+        <section id="sectForm" class="aligning">
+            
+            <header>
+                <h1>Calculadora</h1>
+            </header>
+
+            <form id="form" action="" class="aligning">
+
+                <input type="number" class="number" id="operand1" name="number" placeholder="Digite um número: ">
+
+                <select name="operator" id="operator">
+                    <option value="" selected disabled>  </option>
+                    <option value="addition">+</option>
+                    <option value="subtraction">-</option>
+                    <option value="multiplication"> * </option>
+                    <option value="division"> / </option>
+                </select>
+
+                <input type="number" class="number" id="operand2" name="number" placeholder="Digite um número: ">
+
+                <button type="button" id="button" onclick="calcular">Calcule</button>
+                <p></p>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

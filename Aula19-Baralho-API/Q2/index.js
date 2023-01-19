@@ -1,0 +1,60 @@
+let img1 = document.getElementById("card1");
+let img2 = document.getElementById("card2");
+let img3 = document.getElementById("card3");
+let img4 = document.getElementById("card4");
+let img5 = document.getElementById("card5");
+
+async function shuffle(){
+    const response = await fetch (`https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1`);
+
+    if(response.status !== 200){
+        return Promise.reject("Erro ao fazer a requisição");
+    }
+    else{
+        const data = await response.json();
+        return data.deck_id; 
+    }
+}
+
+async function drawCards(dataID){
+    const array = [];
+    for (let i = 0; i < 5; i++) {
+
+        const response = await fetch (`https://deckofcardsapi.com/api/deck/${dataID}/draw/?count=1`);
+
+        if(response.status !== 200){
+            return Promise.reject("Erro");
+        }
+        else{
+            array.push(response.json());
+        }
+    }console.log(array)
+    Promise.all(array)
+    .then((array) => {
+        console.log(array)
+        showCards(array)
+    });
+}
+
+async function aux(){
+    try {
+        const dataID = await shuffle();
+        await drawCards(dataID);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function showCards(array){
+    img1.src = array[0].cards[0].image;
+    img2.src = array[1].cards[0].image;
+    img3.src = array[2].cards[0].image;
+    img4.src = array[3].cards[0].image;
+    img5.src = array[4].cards[0].image;
+}
+
+aux();
+
+
+
+
